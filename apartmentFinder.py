@@ -3,10 +3,10 @@ from bs4 import BeautifulSoup
 import webbrowser
 import argparse
 
-parser = argparse.ArgumentParser('apartmentFinder')
+parser = argparse.ArgumentParser('python3 apartmentFinder.py')
 parser.add_argument('zip', help='zip code to search', type=int)
 parser.add_argument('price', help='max price to find', nargs='?', type=int, default=10000)
-parser.add_argument('distance', help='max distance to serach', nargs='?', type=int, default=0)
+parser.add_argument('distance', help='max distance to search', nargs='?', type=int, default=0)
 parser.add_argument("--open", help="experimental: open found listings in chrome", action="store_true")
 args = parser.parse_args()
 
